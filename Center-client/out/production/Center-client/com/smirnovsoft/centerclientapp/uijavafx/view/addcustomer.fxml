@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.smirnovsoft.centerclientapp.uijavafx.controllers.AddCustomerController">
+   <children>
+      <SplitPane dividerPositions="0.520066889632107" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane prefHeight="308.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="editChildFirstName" promptText="Child first name">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="editChildLastName" promptText="Child last name" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="editParentName" prefHeight="5.0" prefWidth="5.0" promptText="Parent name" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="editMobilePhone" promptText="Mobile number" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <DatePicker fx:id="pickDateOfBirth" prefHeight="25.0" prefWidth="214.0" promptText="Date of birth" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </DatePicker>
+                        <Button fx:id="btnAdd" mnemonicParsing="false" prefHeight="52.0" prefWidth="144.0" text="Add" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Label text="Child first name" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label text="Child last name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Parent name" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mobile phone" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Date of birth" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnDelete" mnemonicParsing="false" prefHeight="52.0" prefWidth="144.0" text="Delete" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="598.0">
+               <children>
+                  <GridPane prefHeight="284.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="235.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TableView fx:id="tableCustomer" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="id" prefWidth="58.0" text="ID" />
+                              <TableColumn fx:id="childFirstName" prefWidth="144.0" text="Child first Name" />
+                            <TableColumn fx:id="childLastName" prefWidth="107.0" text="Child last Name" />
+                              <TableColumn fx:id="dateOfBirth" prefWidth="98.0" text="Date of birth" />
+                              <TableColumn fx:id="age" prefWidth="90.0" text="Child age" />
+                              <TableColumn fx:id="parentName" prefWidth="153.0" text="Parent name" />
+                              <TableColumn fx:id="mobilePhone" prefWidth="147.0" text="Mobile Phone" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

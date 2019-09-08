@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.smirnovsoft.centerclientapp.uijavafx.controllers.GroupsManager">
+   <children>
+      <TableView fx:id="tableGroups" layoutX="22.0" layoutY="69.0" prefHeight="200.0" prefWidth="723.0">
+        <columns>
+          <TableColumn fx:id="groupsID" prefWidth="60.0" text="ID" />
+            <TableColumn fx:id="groupTitle" prefWidth="87.0" text="Title" />
+          <TableColumn fx:id="groupTeacher" prefWidth="181.0" text="Teacher name" />
+            <TableColumn fx:id="groupStart" prefWidth="96.0" text="Start" />
+            <TableColumn fx:id="groupEnd" prefWidth="100.0" text="End" />
+            <TableColumn fx:id="groupCost" prefWidth="94.0" text="Cost in hour" />
+            <TableColumn fx:id="groupStatus" prefWidth="104.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="22.0" layoutY="281.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="153.0" text="Delete selected group" />
+      <Label layoutX="250.0" layoutY="26.0" text="Formed groups">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="childrenList" layoutX="782.0" layoutY="69.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="805.0" layoutY="26.0" prefHeight="35.0" prefWidth="135.0" text="Children List">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXListView fx:id="timeTable" layoutX="28.0" layoutY="374.0" orientation="HORIZONTAL" prefHeight="212.0" prefWidth="723.0" />
+      <Label layoutX="250.0" layoutY="328.0" prefHeight="17.0" prefWidth="200.0" text="Time table">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lGain" layoutX="782.0" layoutY="376.0" prefHeight="31.0" prefWidth="144.0" text="Gain :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lDisbursement" layoutX="782.0" layoutY="417.0" prefHeight="31.0" prefWidth="144.0" text="Disbursement :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lTotal" layoutX="782.0" layoutY="465.0" prefHeight="31.0" prefWidth="144.0" text="Total :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lG" layoutX="982.0" layoutY="376.0" prefHeight="31.0" prefWidth="163.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lD" layoutX="982.0" layoutY="417.0" prefHeight="31.0" prefWidth="163.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lT" layoutX="982.0" layoutY="465.0" prefHeight="31.0" prefWidth="163.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="882.0" layoutY="302.0" prefHeight="53.0" prefWidth="163.0" text="Gain calculator">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="197.0" layoutY="281.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="173.0" text="Save report selected group" />
+   </children>
+</AnchorPane>

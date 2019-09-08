@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.smirnovsoft.centerclientapp.uijavafx.controllers.AddGroupController">
+   <children>
+      <SplitPane dividerPositions="0.5350701402805611" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="496.0">
+               <children>
+                  <TableView fx:id="tableTeacher" layoutX="15.0" layoutY="128.0" prefHeight="200.0" prefWidth="478.0">
+                    <columns>
+                      <TableColumn fx:id="ID" prefWidth="52.0" text="ID" />
+                      <TableColumn fx:id="name" prefWidth="170.0" text="Name " />
+                        <TableColumn fx:id="position" prefWidth="140.0" text="Position" />
+                        <TableColumn fx:id="salary" minWidth="0.0" prefWidth="115.0" text="Salary per/h" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="129.0" layoutY="92.0" prefHeight="36.0" prefWidth="182.0" text="Choose teacher">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="pickGroup" layoutX="15.0" layoutY="46.0" prefWidth="150.0" />
+                  <DatePicker fx:id="pickStart" layoutX="247.0" layoutY="46.0" prefHeight="25.0" prefWidth="117.0" />
+                  <DatePicker fx:id="pickEnd" layoutX="380.0" layoutY="46.0" prefHeight="25.0" prefWidth="117.0" />
+                  <Label layoutX="32.0" layoutY="10.0" prefHeight="36.0" prefWidth="104.0" text="Choose group">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="275.0" layoutY="16.0" text="Start ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="420.0" layoutY="16.0" text="End">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableChild" layoutX="15.0" layoutY="377.0" prefHeight="200.0" prefWidth="359.0">
+                    <columns>
+                      <TableColumn fx:id="IDChild" prefWidth="57.0" text="ID" />
+                      <TableColumn fx:id="nameChild" prefWidth="181.0" text="Name" />
+                        <TableColumn fx:id="ageChild" prefWidth="120.0" text="Age" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="129.0" layoutY="341.0" prefHeight="36.0" prefWidth="182.0" text="Choose childs">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnOpt" layoutX="171.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="21.0" text="...." />
+                  <Button fx:id="btnR" layoutX="201.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="21.0" text="R" />
+                  <Button fx:id="btnFormate" layoutX="394.0" layoutY="406.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="117.0" text="Add Group" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="labelNameGroup" layoutX="28.0" layoutY="14.0" prefHeight="36.0" prefWidth="450.0" text="Group title :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lStart" layoutX="28.0" layoutY="50.0" prefHeight="36.0" prefWidth="194.0" text="Start :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lEnd" layoutX="223.0" layoutY="50.0" prefHeight="36.0" prefWidth="232.0" text="End :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lTeacher" layoutX="28.0" layoutY="108.0" prefHeight="36.0" prefWidth="396.0" text="Teacher :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lChildren" layoutX="253.0" layoutY="160.0" prefHeight="36.0" prefWidth="94.0" text="Children">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="save" layoutX="14.0" layoutY="456.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="117.0" text="Save in data base" />
+                  <Button fx:id="clearTable" layoutX="14.0" layoutY="506.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="117.0" text="Clear" />
+                  <TableView fx:id="tableChildren" layoutX="199.0" layoutY="196.0" prefHeight="345.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="childsNameColum" prefWidth="140.0" text="Name" />
+                      <TableColumn fx:id="childsAgeColum" prefWidth="59.0" text="Age" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

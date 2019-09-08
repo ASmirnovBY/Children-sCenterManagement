@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.smirnovsoft.centerclientapp.uijavafx.controllers.AddEmployeeController">
+   <children>
+      <SplitPane dividerPositions="0.520066889632107" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane prefHeight="308.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="editFirstName" promptText="First name ">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="editLastName" promptText="Last Name" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="pickPosition" prefWidth="150.0" promptText="Position" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </ComboBox>
+                        <TextField fx:id="editSalary" prefHeight="5.0" prefWidth="5.0" promptText="Salary" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="editMobile" promptText="Mobile number" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <DatePicker fx:id="pickDateOfBirth" promptText="Date of birth" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </DatePicker>
+                        <DatePicker fx:id="pickStartWork" promptText="Started work" showWeekNumbers="true" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </DatePicker>
+                        <Button fx:id="btnAdd" mnemonicParsing="false" prefHeight="52.0" prefWidth="144.0" text="Add" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Label text="First name" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label text="Last name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Position" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Salary" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Mobile phone" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Date of birth" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Start work" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnDelete" mnemonicParsing="false" prefHeight="52.0" prefWidth="144.0" text="Delete" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="313.0" prefWidth="598.0">
+               <children>
+                  <GridPane prefHeight="284.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="235.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TableView fx:id="tableEmloyee" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="id" prefWidth="58.0" text="ID" />
+                              <TableColumn fx:id="firstName" prefWidth="126.0" text="First Name" />
+                            <TableColumn fx:id="lastName" prefWidth="110.0" text="LastName" />
+                              <TableColumn fx:id="position" prefWidth="90.0" text="Position" />
+                              <TableColumn fx:id="salary" prefWidth="83.0" text="Salary" />
+                              <TableColumn fx:id="phone" prefWidth="87.0" text="Phone" />
+                              <TableColumn fx:id="birth" prefWidth="109.0" text="BirthDay" />
+                              <TableColumn fx:id="startWork" prefWidth="127.0" text="StartWork" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

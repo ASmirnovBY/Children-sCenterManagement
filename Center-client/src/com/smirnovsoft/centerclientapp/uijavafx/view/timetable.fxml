@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.smirnovsoft.centerclientapp.uijavafx.controllers.TimeTableController">
+   <children>
+      <Label fx:id="lStart" layoutX="175.0" layoutY="28.0" prefHeight="27.0" prefWidth="156.0" text="Start  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lEnd" layoutX="384.0" layoutY="28.0" prefHeight="27.0" prefWidth="179.0" text="End :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lTimeTable" layoutX="466.0" layoutY="92.0" prefHeight="27.0" prefWidth="90.0" text="Time table">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="439.0" layoutY="328.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="109.0" text="Save in data" />
+      <ListView fx:id="listDays" layoutX="45.0" layoutY="123.0" prefHeight="179.0" prefWidth="137.0" />
+      <Label fx:id="lPickedDate" layoutX="45.0" layoutY="317.0" prefHeight="20.0" prefWidth="320.0" text="Picked date :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="pickerStart" layoutX="218.0" layoutY="160.0" prefHeight="25.0" prefWidth="109.0" promptText="start time" />
+      <JFXTimePicker fx:id="pickerEnd" layoutX="219.0" layoutY="200.0" prefHeight="25.0" prefWidth="109.0" promptText="end time" />
+      <Label fx:id="lPeriod" layoutX="81.0" layoutY="92.0" prefHeight="27.0" prefWidth="90.0" text="Period">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddOnTable" layoutX="218.0" layoutY="241.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="add in time table" />
+      <TableView fx:id="tableTime" layoutX="356.0" layoutY="126.0" prefHeight="187.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="dayof" text="Day of week" />
+          <TableColumn fx:id="dayInTable" prefWidth="87.0" text="Day" />
+            <TableColumn fx:id="timeStart" prefWidth="75.0" text="Start time" />
+            <TableColumn fx:id="timeEnd" prefWidth="75.0" text="End time" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="567.0" layoutY="328.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="109.0" text="Delete from table" />
+   </children>
+</AnchorPane>

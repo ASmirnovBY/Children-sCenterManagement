@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #6600ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.smirnovsoft.centerclientapp.uijavafx.controllers.LoginController">
+   <children>
+      <Button fx:id="bLogin" layoutX="88.0" layoutY="215.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: #33ffff;" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField text = "user@mail.ru" id="tUser" fx:id="tUserName" layoutX="55.0" layoutY="104.0" prefHeight="25.0" prefWidth="191.0" promptText="User name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField text="12345" id="tPass" fx:id="tPassword" layoutX="55.0" layoutY="155.0" prefHeight="25.0" prefWidth="191.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="autorization" layoutX="72.0" layoutY="31.0" prefHeight="54.0" prefWidth="156.0" text="Welcome">
+         <font>
+            <Font size="37.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.5476190476190477" endY="1.0" startX="0.38095238095238093">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#322180" offset="0.49828178694158076" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

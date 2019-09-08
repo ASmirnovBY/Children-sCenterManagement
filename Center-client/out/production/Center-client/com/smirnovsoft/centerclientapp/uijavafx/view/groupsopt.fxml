@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="365.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.smirnovsoft.centerclientapp.uijavafx.controllers.AddGroupPropertiesController">
+   <children>
+      <TextField fx:id="editTitle" layoutX="127.0" layoutY="61.0" prefHeight="25.0" prefWidth="194.0" promptText="Group title" />
+      <Label layoutX="7.0" layoutY="60.0" prefHeight="27.0" prefWidth="87.0" text="Group title">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="107.0" prefHeight="27.0" prefWidth="87.0" text="Cost per/h">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="editCost" layoutX="127.0" layoutY="108.0" prefHeight="25.0" prefWidth="194.0" promptText="Cost" />
+      <TextField fx:id="editLesson" layoutX="128.0" layoutY="156.0" prefHeight="25.0" prefWidth="194.0" promptText="Count Lesson" />
+      <Label layoutX="8.0" layoutY="155.0" prefHeight="27.0" prefWidth="105.0" text="Lesson per/d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdd" layoutX="14.0" layoutY="202.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="87.0" text="Add">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="121.0" layoutY="202.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="87.0" text="delete">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="groupProper" layoutX="324.0" layoutY="42.0" prefHeight="231.0" prefWidth="326.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="51.0" text="ID" />
+          <TableColumn fx:id="title" prefWidth="108.0" text="Title" />
+            <TableColumn fx:id="cost" prefWidth="66.0" text="Cost per/h" />
+            <TableColumn fx:id="lesson" prefWidth="100.0" text="Lesson per/d" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
